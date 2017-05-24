@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/car_info_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:layout_weight="1"
+        android:text="设备型号"
+        android:id="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="设备名称"
+        android:layout_alignBaseline="@+id/Info_car_name"
+        android:layout_alignBottom="@+id/Info_car_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/Info_car_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/Info_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/Info_car_type"
+        android:layout_alignLeft="@+id/Info_car_type"
+        android:layout_alignStart="@+id/Info_car_type" />
+
+    <Button
+        android:id="@+id/show_car_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看设备信息"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/car_data"
+        android:layout_toRightOf="@+id/Info_car_name"
+        android:layout_toEndOf="@+id/Info_car_name" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="66dp"
+        android:text="车辆信息　" />
+
+    <TextView
+        android:id="@+id/car_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_car_info"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="62dp"
+        android:layout_toLeftOf="@+id/car_data"
+        android:layout_toStartOf="@+id/car_data"
+        android:text="发送指令" />
+
+    <Button
+        android:id="@+id/open_door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="45dp"
+        android:layout_toLeftOf="@+id/Info_car_name"
+        android:layout_toStartOf="@+id/Info_car_name"
+        android:text="开门" />
+
+    <Button
+        android:id="@+id/open_refri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/open_door"
+        android:layout_alignBottom="@+id/open_door"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:text="开空调" />
+
+    <Button
+        android:id="@+id/refesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/show_car_info"
+        android:layout_toEndOf="@+id/show_car_info"
+        android:layout_toRightOf="@+id/show_car_info"
+        android:text="刷新" />
+
+
+</RelativeLayout>
